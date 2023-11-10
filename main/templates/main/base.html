@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            overflow-x: hidden;
+            padding-top: 20px;
+            border-right: 2px solid #ccc;
+        }
+        .sidenav img {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+        }
+        .sidenav a {
+            padding: 10px 0;
+            text-decoration: none;
+            font-size: 20px;
+            color: #000;
+            display: block;
+        }
+        .sidenav a:hover {
+            color: #555;
+        }
+        .main {
+            margin-left: 200px;
+            padding: 20px;
+            height: 100vh; /* Set the height to 100% of the viewport height */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        hr {
+            border: 1px solid #555;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>{% block title %} Reza's site {% endblock %}</title>
+</head>
+<body>
+    <div class="sidenav">
+        <img src="..\static\photos\logo_invia.png" alt="Logo">
+        <a href="/">ACCUEIL</a>
+        <a href="/concept">CONCEPT</a>
+        <a href="/specialiste">NOS SPECIALISTES</a>
+        <a href="/tarif">TARIF DES PRESTATIONS</a>
+        <a href="/instagram">INSTAGRAM</a>
+        <a href="/contact">CONTACT</a>
+    </div>
+    <div id="content" class="main">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <h1 class="mt-2">Enviarun</h1>
+                <hr class="mt-0 mb-4">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+<!-- Footer -->
+<!-- Footer -->
+<footer style="text-align: center; position: absolute; bottom: 0; width: 100%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>&copy; InVia. Tout droits réservés.</p>
+                <p>Contact us on Instagram: <a href="https://www.instagram.com/your_instagram_account/">@YourInstagramAccount</a></p>
+                <p>Phone: +123-456-7890</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqg9RVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

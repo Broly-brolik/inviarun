@@ -1,0 +1,46 @@
+{% extends "main/base.html" %}
+
+{% block title %}
+    enviarun
+{% endblock %}
+
+{% block content %}
+<style>
+    /* Set background image on the body element to cover the entire screen */
+    body {
+        background-image: url('../static/photos/cool 4.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* Style the content area with a semi-transparent background */
+    .container {
+        background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for text readability */
+        color: white; /* Set text color to contrast with the background */
+        padding: 20px; /* Add some padding for readability */
+    }
+
+    /* You can also style the content inside the container if needed */
+    .container h1,
+    .container p {
+        padding: 20px;
+    }
+</style>
+
+<div class="container">
+    <h1>InViaRun</h1>
+    <p>Association sportive, votre vision, notre passion</p>
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- You can remove the <img> element here, as it's now the background -->
+        </div>
+        <div class="col-md-6">
+            <p>
+                Si vous pratiquez un sport ...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum libero et justo scelerisque, ut bibendum libero posuere. Sed vel efficitur orci. Nullam rhoncus, leo eu auctor vulputate, libero purus efficitur turpis, vel vestibulum mi sapien a lorem.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
